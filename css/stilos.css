@@ -2,6 +2,7 @@
 	font-family: "Montserrat"!important;
 }
 
+/**header**/
 .img-logo img{
 	max-height: 100%;
 	max-width: 100%;
@@ -14,12 +15,15 @@
 .own-navbar-right{
 	padding: 28px 0px;
     font-size: 25px;
+
 }
 
-.own-nav{
-	border-bottom: 1px solid black;
-    background: rgba(255, 255, 255, 0.24);
+.own-navbar-right a {
+	color: black;
 }
+
+
+/**body**/
 
 .banner1 img {
 	max-width: 100%;
@@ -27,5 +31,74 @@
 }
 
 .banner1 {
-	
+
+}
+
+.contbanner {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+}
+
+.fotohomepage {
+	background: url("/imagenes/walloomBanner.png") no-repeat center fixed;
+	background-size: cover;
+	width:100%; 
+	height:583px;
+}
+
+.fotohomepage, h2, h3, p{
+	text-align: center;
+	margin: 0px!important;
+}
+
+.textos {
+	position: relative;
+	top: 50%;
+	text-transform: uppercase;
+	color: white;
+}
+
+.textos h2 {
+	font-size: 28px;
+	font-weight: bold;
+	    padding-bottom: 30px;
+    margin: 0px;
+}
+
+.textos h3 {
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.textos p {
+	font-size: 15px;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.textos p:hover{
+background-color: #55d4ca	;
+}
+
+.parrafo1 section {
+	text-align: center;
+	right: 0px;
+	top: 100px;
+	font-size: 23px;
+}
+
+.parrafo2-3{
+	padding-top: 300px;
+}
+
+.parrafo2-3 h2 {
+line-height: 60px;
+}
+
+/**footer {
+	background-color: black;
 }
