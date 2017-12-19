@@ -1,0 +1,22 @@
+*{
+	font-family: "Montserrat"!important;
+}
+
+.img-logo img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.img-logo {
+	width: 100%;
+}
+
+.own-navbar-right{
+	padding: 28px 0px;
+    font-size: 25px;
+}
+
+.own-nav{
+	border-bottom: 1px solid black;
+    background: rgba(255, 255, 255, 0.24);
+}
