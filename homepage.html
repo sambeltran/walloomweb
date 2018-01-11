@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<header>
-				<nav class="navbar navbar-default" style="border-color: #333; background-color: #333;">
+				<nav class="navbar navbar-default barracont" style="border-color: #333; background-color: #333; border-radius: 0px;">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
 					    <div class="navbar-header">
@@ -36,7 +36,7 @@
 						      </ul>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
-					</nav>
+				</nav>
 		</header>
 
 		<div class="contbanner">
@@ -63,6 +63,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-6 text-center">
+
+							<div><span class="glyphicon glyphicon-pencil"></span> </div>
 								<h2 id="titpa1">titulo de la izquierda</h2>
 							<p>
 							here we will specify more information about the company so that the customer can learn more about us and our work,
@@ -75,96 +77,32 @@
 							<p>here we will specify more information about the cokmpany so that the customer can learn more 	about us and our work.
 							</p>
 							<button>view more</button>
-						</div>
+					</div>
 
-						<div id="testimonios" class="col-sm-12 col-md-12 col-l-12 text-center">
-						<h2 >testimonies</h2>
-							<p>here you'll see a couple of testimonies from those who we worked for. They'll tell you how we worked for them and the expirience they had using our products.We plan to place photographs either the customer or the company its self.
-							</p>
-							<button>view more</button>
+					<div class="col-xs-12">
+						<div class="w3-content w3-section witness" style="max-width:500px">
+							<h2 class="w3-center">Testimonios</h2>
+			  			  <img class="mySlides" src="imagenes/carro1.jpg" style="width:100%">
+						  <img class="mySlides" src="imagenes/carro2.jpg" style="width:100%">						  <img class="mySlides" src="imagenes/carro3.jpg" style="width:100%">
 						</div>
 
 					</div>
 				</div>
 			</section>
 
-				<section id="contactar">
-					<div class="contacto">
-						<div id="fotocontact">
-						</div>
-
-
-<div class="message" ng-if="!contact.msgSendIt">
-				<div class="header">
-					Leave us a message!
-				</div>
-				<div class="form" ng-cloack>
-					<form ng-submit="contact.contactUs(true)" ng-init="contact.setFormScope(this)"
-						name="contactForm" autocomplete="off" novalidate >
-						<div class="group">
-							<input name="name" type="text"
-								ng-class="{filled: contact.user}"
-								ng-model="contact.user" />
-							<label>Name:</label>
-						</div>
-						<div class="group">
-							<input name="email" type="email"
-								ng-focus="contact.toggleVisited('email')"
-								ng-blur="contact.toggleVisited('email')"
-								ng-pattern="contact.emailRegex"
-								ng-class="{filled: contact.hasValue(), 'check-validation': contactForm.$submitted, 'error-input': contact.emailRequiredError()}"
-								ng-model="contact.email" required />
-							<label>Email:</label>
-							<span
-								ng-class="{'info-message': contact.emailRequiredFeedback(), 'error-message': contact.emailRequiredError()}"
-								ng-show="contact.emailRequiredFeedback() || contact.emailRequiredError()"
-							>
-								Hey! This field is required.
-							</span>
-							<span
-								ng-class="{'info-message': contact.emailRegexFeedback(), 'error-message': contact.emailRegexError()}"
-								ng-show="contact.emailRegexFeedback() || contact.emailRegexError()"
-							>
-								Oops! You must enter a valid email address.
-							</span>
-						</div>
-						<div class="group">
-							<textarea name="message" class="form-area"
-								ng-class="{filled: contact.message, 'error-input' : contact.messageError()}"
-								ng-focus="contact.toggleVisited('message')"
-								ng-blur="contact.toggleVisited('message')"
-								ng-model="contact.message" required>
-							</textarea>
-							<label>Message:</label>
-							<span
-								ng-class="{'info-message': contact.messageFeedback(), 'error-message': contact.messageError()}"
-								ng-show="contact.messageFeedback() || contact.messageError()"
-							>
-								Hey! This field is required.
-							</span>
-						</div>
-						<input name="specialData" type="text" class="specialData" ng-model="contact.specialData" />
-						<div class="group action">
-							<uw-progress-button>
-								<button type="submit" ng-disabled="contact.sendingEmail" class="">
-									<span>Send message</span>
-								</button>
-							</uw-progress-button>
-						</div>
-					</form>
+		<section id="contactar">
+			<div class="contacto">
+					<div id="fotocontact"></div>
+			        
+				<div>
+					<h2 style="text-align: center;"><a href="#">contact us</a></h2>
+					<p>here you can get in touch with us</p>
 				</div>
 			</div>
+		</section>
 
-
-						<div>
-							<h2>contact us</h2>
-							<p>here you can get in touch with us</p>
-						</div>
-					</div>
-
-				</section>
-
-			</div>
+	
+	</div>
 
 
  		</div>
